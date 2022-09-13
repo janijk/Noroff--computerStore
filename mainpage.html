@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Komputer Store</title>
+</head>
+<body class="bg">
+    <div class="container">
+        <div class="header">
+            <div><h1>Komputer Store</h1></div>            
+        </div>
+        <div class="box-container">
+            <div class="boxes">
+                <h2>Bank</h2>
+                <div class="work-buttons">
+                    <p>Balance</p>                    
+                    <div class="bank-balance">
+                        <p class="assets" id="bank-balance"></p>
+                    </div>                     
+                </div>
+                <div class="loan-amount" id="loanAmount">
+                    <p>Loan amount</p>
+                    <div class="bank-balance">
+                        <p class="liabilities" id="loan-balance"></p>
+                    </div>                     
+                </div>
+                <div class="work-buttons" id="loanButton">
+                    <input type="button" onclick="takeLoan()" value="Get loan" class="button loan-button">
+                </div>
+            </div>
+            <div class="boxes">
+                <h2>Work</h2>
+                <div class="work-buttons">                    
+                    <p>Pay</p>
+                    <p id="pay-amount"></p>                    
+                </div>
+                <div class="work-buttons">
+                    <div class="repay-button" id="repay">
+                        <input type="button" onclick="repayLoan()" value="Repay loan" class="button bank-button">
+                    </div>
+                    <input type="button" onclick="bankMoney()" value="Bank" class="button bank-button">
+                    <input type="button" onclick="doWork()" value="Work" class="button work-button">
+                </div>
+                
+            </div>
+            <div class="boxes">
+                <h2>Laptop</h2>
+                <select name="laptop-selection" id="laptopSelection"></select>
+                <h4>Features:</h4>
+                <span id="features"></span>               
+            </div>
+        </div>
+        <div class="laptop-preview"> 
+            <div class="boxes" style="flex: 2;">
+                <img id="laptopImage" width="150" height="150" src="" alt="Image of computer">
+            </div>
+            <div class="boxes" style="flex: 5;">
+                <h2 id="laptopHeading"></h2>
+                <p id="laptopText"></p>
+            </div>
+            <div class="boxes" style="flex: 2;">
+                <div class="work-buttons"><h2 id="previewPrice"></h2></div>
+                <div class="work-buttons"><input type="button" onclick="buyLaptop()" value="Buy" class="button buy-button"></div>                
+            </div>
+        </div>        
+    </div>
+    <script src="/komputerStore/scripts.js"></script>
+</body>
+</html>
