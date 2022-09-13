@@ -59,6 +59,11 @@ div.header {
  div.bank-balance {
 	flex-direction: column;
  }
+ div.loan-amount {
+	display: none;	
+    flex-direction: row;
+    justify-content: space-between;
+ }
 /*-------------- Paragraphs --------------*/
 p.assets {
 	display: flex;

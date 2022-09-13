@@ -19,7 +19,7 @@
                         <p class="assets" id="bank-balance"></p>
                     </div>                     
                 </div>
-                <div class="work-buttons" id="loanAmount">
+                <div class="loan-amount" id="loanAmount">
                     <p>Loan amount</p>
                     <div class="bank-balance">
                         <p class="liabilities" id="loan-balance"></p>
@@ -36,12 +36,13 @@
                     <p id="pay-amount"></p>                    
                 </div>
                 <div class="work-buttons">
+                    <div class="repay-button" id="repay">
+                        <input type="button" onclick="repayLoan()" value="Repay loan" class="button bank-button">
+                    </div>
                     <input type="button" onclick="bankMoney()" value="Bank" class="button bank-button">
                     <input type="button" onclick="doWork()" value="Work" class="button work-button">
                 </div>
-                <div class="repay-button" id="repay">
-                    <input type="button" onclick="repayLoan()" value="Repay loan" class="button bank-button">
-                </div>
+                
             </div>
             <div class="boxes">
                 <h2>Laptop</h2>
@@ -60,7 +61,7 @@
             </div>
             <div class="boxes" style="flex: 2;">
                 <div class="work-buttons"><h2 id="previewPrice"></h2></div>
-                <div class="work-buttons"><input type="button" value="Buy" class="button buy-button"></div>                
+                <div class="work-buttons"><input type="button" onclick="buyLaptop()" value="Buy" class="button buy-button"></div>                
             </div>
         </div>        
     </div>
