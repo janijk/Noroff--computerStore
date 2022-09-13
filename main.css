@@ -1,0 +1,124 @@
+@charset "ISO-8859-1";
+/*dark background*/
+body.bg {
+	background-color:black;
+	color: whitesmoke;
+}
+/*-------------- Divs --------------*/
+div.container {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 75%;
+	padding: 20px;  
+}
+div.header { 
+ 	/* border: 1px solid white;  */
+    background-color:#212121;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+ }
+ div.boxes {
+    display: flex;
+	flex-direction: column;
+    background-color:#212121;
+    width: 300px;
+    padding: 20px;
+	margin: 20px;
+ }
+ div.box-container {
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 250px;
+ }
+ div.laptop-preview {
+    display: flex;
+	flex-direction: row;
+	flex: 10;
+    background-color:#212121;
+    padding: 20px;
+    margin: 20px;
+ }
+ div.row {
+    display: flex;
+    flex-direction: row;
+ }
+ div.work-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ div.repay-button {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ div.bank-balance {
+	flex-direction: column;
+ }
+/*-------------- Paragraphs --------------*/
+p.assets {
+	display: flex;
+	color: green;
+}
+p.liabilities {
+	display: flex;
+	color: red;
+}
+ /*-------------- Buttons --------------*/
+ .button {
+	flex: 0.75;
+	background-color: transparent;
+  	border: 1.5px solid transparent;
+ 	color: whitesmoke;
+ 	padding: 0.2rem 0.5rem;
+ 	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 1rem;
+  	font-weight: 400;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+ 	margin: 5px;
+ 	transition-duration: 0.4s;
+  	cursor: pointer;
+}
+/*blue button*/
+.loan-button {
+	color: whitesmoke; 
+ 	border-color: #0d6efd;
+}
+.loan-button:hover {
+	background-color: #0d6efd;
+	color: whitesmoke;
+}
+/*yellow button*/
+.work-button {
+	color: whitesmoke;
+    border-color: yellow;
+}
+.work-button:hover {
+	background-color: yellow;
+	color: black;
+}
+/*green button*/
+.bank-button {
+	color: whitesmoke;
+    border-color: #198754;
+}
+.bank-button:hover {
+	background-color: #198754;
+	color: whitesmoke;
+}
+/*teal button*/
+.buy-button {
+	color: whitesmoke;
+    border-color: teal;
+}
+.buy-button:hover {
+	background-color: teal;
+	color: whitesmoke;
+}
