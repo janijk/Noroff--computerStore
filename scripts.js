@@ -24,7 +24,8 @@ try {
 
 // call addLaptopSelection for every laptop fetched from komputer store api
 const updateLaptopSelection = (data) => {
-    data.forEach(laptop => addLaptopToSelection(laptop))
+    setLaptopPreview();
+    data.forEach(laptop => addLaptopToSelection(laptop));
 };
 
 // Add laptop to drop selection
@@ -36,15 +37,17 @@ const addLaptopToSelection = (laptop) => {
 };
 
 // Sets laptop preview elements according to current selection of laptop
-const setLaptopPreview = e =>{
-    const selected = laptops[e.target.selectedIndex];
+const setLaptopPreview = (e) =>{
+    let indx = 0;
+    if(e) indx = e.target.selectedIndex;
+    let selected = laptops[`${indx}`];
     laptopFeatures.innerText = selected.description;
     laptopPreviewImage.src = `https://noroff-komputer-store-api.herokuapp.com/${selected.image}`;
     laptopPreviewHeading.innerText = selected.title;
     laptopPreviewText.innerText = selected.specs;
     laptopPreviewPrice.innerText = `${selected.price} €`;
 };
-
+//setLaptopPreview();
 // Increases pay amount by 100
 const doWork = () => {
     let pay = parseInt(payAmount.innerText);
@@ -121,7 +124,7 @@ const buyLaptop = () => {
 };
 
 // Takes booolean as a param, if true => sets repay loan button and loan amount field visible
-// and take loan button hidden and vice versa
+// and take loan button hidden, false => vice versa
 const changeVisibility = (isLoan) =>{
     if(isLoan){
         document.getElementById("repay").style.display = "flex"
