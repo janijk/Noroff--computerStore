@@ -30,6 +30,7 @@ can earn money and transfer your funds to your bank account or repay loan if you
 ## Launch
 1. Clone repository
 2. Use software of choice to view the page
+3. Or go to Heroku deployed version [Here](https://komp-store.herokuapp.com/)
 
 ## Authors
 https://gitlab.com/janijk
