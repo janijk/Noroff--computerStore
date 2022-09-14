@@ -9,7 +9,7 @@
 
 ## Introduction
 A simple dynamic webpage built using vanilla JavaScript. The webpage has three parts: bank, work and laptop. At work you
-can earn money and transfer your funds to your bank account or repay loan if you have one. At bank you can see your assets and liabilities and take a loan. Laptop has a selection of laptops to choose from and a preview for current choice, you can also buy laptop of your choice.
+can earn money and transfer your funds to your bank account or repay loan if you have one. At bank you can see your assets and liabilities and take a loan. Laptop has a selection of laptops to choose from and a preview for current choice, you can also buy laptop of your choice. Heroku deployed version uses Express.js.
 
 
 ## Features
@@ -26,10 +26,12 @@ can earn money and transfer your funds to your bank account or repay loan if you
 - JavaScript
 - HTML
 - CSS
+- Express.js
+- Heroku
 
 ## Launch
 1. Clone repository
-2. Use software of choice to view the page
+2. Use software of choice to run
 3. Or go to Heroku deployed version [Here](https://komp-store.herokuapp.com/)
 
 ## Authors
