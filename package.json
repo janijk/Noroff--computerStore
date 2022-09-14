@@ -1,0 +1,23 @@
+{
+  "name": "komputerstore",
+  "version": "1.0.0",
+  "description": "* [Introduction](#introduction)\r * [Features](#features)\r * [Technologies](#technologies)\r * [Launch](#launch)\r * [Authors](#authors)\r * [Sources](#sources)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/janijk/komputer-store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/janijk/komputer-store/issues"
+  },
+  "homepage": "https://gitlab.com/janijk/komputer-store#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
